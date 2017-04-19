@@ -1,4 +1,4 @@
-## Mechanize Doc's: http://docs.seattlerb.org/mechanize/GUIDE_rdoc.html
+## Needed to do this to get it to run on heroku: https://gist.github.com/edelpero/9257311 (procfile etc).
 class SearchController < ApplicationController
 
   def index
