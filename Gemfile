@@ -36,8 +36,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'nokogiri'
-gem 'mechanize'
-gem 'nikkou'
+gem 'watir'
 
 gem 'awesome_print'
 
@@ -46,6 +45,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'pry'
   gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :development do

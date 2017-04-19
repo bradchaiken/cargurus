@@ -1,0 +1,38 @@
+<%= render 'shared/search_form' %>
+
+<br>
+
+<table>
+  <tr>
+    <th>Dealer Trade In Estimate</th>
+    <th>Instant Market Value</th>
+    <th>Profit Over Trade In</th>
+    <th>Vin Number</th>
+    <th>Report URL</th>
+  </tr>
+  <tr>
+    <td><%= @dealer_trade_in_estimate %></td>
+    <td><%= @instant_market_value %></td>
+    <td><%= @profit_over_trade_in %></td>
+    <td><%= @vin %></td>
+    <td><%= link_to 'Link', @url %></td>
+  </tr>
+</table>
+
+<style>
+  table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+  }
+
+  td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+  }
+
+  tr:nth-child(even) {
+      background-color: #dddddd;
+  }
+</style>

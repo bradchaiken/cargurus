@@ -1,0 +1,19 @@
+<%= form_tag search_path, {remote: false, role: 'form', id: '', class: ''} do %>
+
+  <%= hidden_field_tag :search, 'true' %>
+
+  <h2 style="text-align:center;">
+  Search For Car Data via VIN (<%= link_to 'cargurus.com', 'http://www.cargurus.com' %>):</h2>
+
+  <center>
+    <div class="form-group">
+      <%= text_field_tag :vin, nil, placeholder: 'Enter a VIN', id: "search-box-property-id", class: "main-search" %>
+    </div>
+    <br>
+    <div class="form-group">
+
+      <%= button_tag 'Search', data: { disable_with: "Please wait..." } %>
+    </div>
+  </center>
+
+<% end %>

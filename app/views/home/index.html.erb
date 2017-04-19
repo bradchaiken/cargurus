@@ -1,1 +1,7 @@
-index.html.erb
+<center>
+  <% if flash[:alert] %>
+    <div style="color: red;"><%= flash[:alert] %></div>
+  <% end %>
+</center>
+
+<%= render 'shared/search_form' %>
