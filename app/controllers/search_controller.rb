@@ -32,7 +32,7 @@ class SearchController < ApplicationController
     puts "\n\n" + "fetch cargurus data started..." + "\n\n"
 
     page_url = "https://www.cargurus.com/Cars/instantMarketValueFromVIN.action?startUrl=%2F&carDescription.vin=#{vin}"
-    browser = Watir::Browser.new
+    browser = Watir::Browser.new :phantomjs
     browser.goto page_url
     doc = Nokogiri::HTML.parse(browser.html)
     set_data(doc, page_url, vin)
