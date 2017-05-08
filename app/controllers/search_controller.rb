@@ -8,7 +8,7 @@ class SearchController < ApplicationController
     # TEST VIN: "5N1AA0NC9EN606990"
     vin = params[:vin]
     scrape_via_vin(vin)
-    # binding.pry
+
     if @data_hash[:vin].present?
       redirect_to result_path(@data_hash)
     else
