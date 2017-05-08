@@ -7,7 +7,8 @@ task :fetch_cars_site_data => :environment do
   # Known vins.
   LIBRARY_OF_VINS = [
     "5N1AA0NC9EN606990",
-    "2HGFB2F62CH332051"
+    "5FNRL5H99BB090042",
+    "WAUAH78E17A241895"
   ]
 
   vins = LIBRARY_OF_VINS
